@@ -14,5 +14,9 @@ a.remove_life
 puts "Player 1 lives #{a.lives} Player 2 lives #{b.lives}"  
 quest = Question.new() 
 quest.set_numbers
-quest.ask_question(a.name)
+if quest.ask_question(a.name) == false 
+  a.remove_life 
+end 
+puts "Player 1 lives #{a.lives} Player 2 lives #{b.lives}"  
+
 

@@ -10,10 +10,13 @@ class Question
     puts "#{player} What does #{@number_1} + #{@number_2} equal?" 
     response = gets.chomp.to_i
     if response == @answer 
-      puts "Correct! You are so awesome #{player}." 
+      puts "Correct! You are so awesome, #{player}." 
+      return true
     else 
-      puts "Wrong! You are not that awesome #{player}."
+      puts "Wrong! You are not that awesome, #{player}."
+      return false
     end 
+
   end
 
 
