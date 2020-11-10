@@ -11,7 +11,7 @@ class Player
     
   def remove_life 
     @lives -= 1
-  end 
+  end  
 
   attr_accessor :name, :lives
 end

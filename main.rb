@@ -11,5 +11,8 @@ b.name = gets.chomp
 puts "Player 1 #{a.name} Player 2 #{b.name}" 
 puts "Player 1 lives #{a.lives} Player 2 lives #{b.lives}" 
 a.remove_life 
-puts "Player 1 lives #{a.lives} Player 2 lives #{b.lives}" 
+puts "Player 1 lives #{a.lives} Player 2 lives #{b.lives}"  
+quest = Question.new() 
+quest.set_numbers
+quest.ask_question(a.name)
 
