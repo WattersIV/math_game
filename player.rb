@@ -1,8 +1,17 @@
 class Player 
   
-  def initialize(name)
+  def initialize(name, lives)
     @name = name
+    @lives = lives
   end  
 
-  attr_accessor :name
+  def life_left 
+    return @lives 
+  end 
+    
+  def remove_life 
+    @lives -= 1
+  end 
+
+  attr_accessor :name, :lives
 end
